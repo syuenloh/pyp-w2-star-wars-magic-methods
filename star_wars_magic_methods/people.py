@@ -46,6 +46,7 @@ class People(object):
         return("{} force chokes {}.".format(self.name,other.name))
     
     def __eq__(self,other):
-        if other.name=='Han Solo':
-            return ("Han shoots {}. BECAUSE HAN SHOOTS FIRST.".format(self.name))            
-        return ("{} shoots {}.".format(self.name,other.name))
+       if other.name=="Han Solo":
+           return ("{} shoots {}. BECAUSE HAN SHOOTS FIRST.".format(other.name,self.name))
+       else:
+           return ("{} shoots {}.".format(self.name,other.name))
